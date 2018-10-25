@@ -7,6 +7,8 @@ Sadly, the repo does not accept pull requests as well, so the code is here.
 
 The repo provides the up to date code to run the Example1 i.e. to send email asynchronously with Celery.
 
+About the same issue is being discussed here:\
+https://stackoverflow.com/questions/43968216/kombu-exceptions-encodeerror-flask-src-is-not-json-serializable
   
 The OS is `Ubuntu 16.04`, `Python3`, `pip3`.
 The `Celery` broker is `Redis` (`sudo apt-get install redis-server`).
