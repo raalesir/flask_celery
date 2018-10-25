@@ -63,9 +63,13 @@ app.config['MAIL_SERVER']='localhost'
 app.config['MAIL_PORT'] = 8025
 ```
 for the settings in the `app.py`. 
-In the separate terminal window issue: `ubuntu@ubuntu-xenial:~$ python3 -m smtpd -n -c DebuggingServer localhost:8025`
+In the separate terminal window issue:
+
+```bash 
+ubuntu@ubuntu-xenial:~$ python3 -m smtpd -n -c DebuggingServer localhost:8025
+```
 This is window where the output mail will be shown, like:
-```console
+```bash
 ---------- MESSAGE FOLLOWS ----------
 Content-Type: text/plain; charset="utf-8"
 MIME-Version: 1.0
@@ -82,7 +86,9 @@ This is a test email sent from a background Celery task.
 ```
 
 The `Celery` worker is issued from the same project dir in the another terminal window:
-`ubuntu@ubuntu-xenial:~/mail/app$ celery -A app.celery  worker -E --loglevel=debug`
+```bash 
+ubuntu@ubuntu-xenial:~/mail/app$ celery -A app.celery  worker -E --loglevel=debug
+```
 
 The project structure as the follows:
 ```bash
