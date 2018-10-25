@@ -70,7 +70,7 @@ In the separate terminal window issue:
 ```bash 
 ubuntu@ubuntu-xenial:~$ python3 -m smtpd -n -c DebuggingServer localhost:8025
 ```
-This is window where the output mail will be shown, like:
+This is the window where the output mail will be shown, like:
 ```bash
 ---------- MESSAGE FOLLOWS ----------
 Content-Type: text/plain; charset="utf-8"
